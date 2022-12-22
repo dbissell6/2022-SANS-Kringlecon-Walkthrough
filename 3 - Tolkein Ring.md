@@ -5,10 +5,14 @@ Chest outside tolkien 2 steps up ladder and left
 
 
 # Windows Event Logs 
-Windows Event Logs was a challenge where we are given powershell logs and asked 10 questions that we can find the answer from the logs. 
-![[Pasted image 20221207150521.png]]
+Windows Event Logs was a challenge where we are given powershell logs and asked 10 questions we can answer by scouring the logs. 
 
-Question 1 
+
+
+-
+![Pasted image 20221207150521](https://user-images.githubusercontent.com/50979196/209185371-72bedd76-f9de-4548-b89a-7f5d39160bcf.png)
+*
+![Pasted image 20221207133659](https://user-images.githubusercontent.com/50979196/209188340-1f74fd76-8943-4dc7-8199-c1157f81cbb1.png)
 
 first answer is 12/24/2022
 
@@ -18,37 +22,38 @@ ipconfig
 whoami
 pwd
 ```
-![[Pasted image 20221207155022.png]]
+![Pasted image 20221207155022](https://user-images.githubusercontent.com/50979196/209185487-b0f82a6a-24dd-41b1-9af8-90e63d658e81.png)
 
 Question 2 a file was saved to a variable, what was the full line that did that
 ```
 $foo = Get-Content .\Recipe| % {$_ -replace 'honey', 'fish oil'} $foo | Add-Content -Path 'recipe_updated.txt
 ```
 3) The attacker created a new file after modifyiing the original, what was the line that was used to create a new file?
-![[Pasted image 20221207155742.png]]
+![Pasted image 20221207155742](https://user-images.githubusercontent.com/50979196/209185546-87c8f0ab-0b21-4100-a2d0-8b4ab4838167.png)
+
 ```
 $foo | Add-Content -Path 'Recipe.txt'
 ```
-![[Pasted image 20221207161945.png]]
+![Pasted image 20221207161945](https://user-images.githubusercontent.com/50979196/209179581-e7f2ab4c-602b-4c0e-9b56-73a25bc701c2.png)
 
 ```
 recipe_updated.txt
 ```
+![Pasted image 20221207162121](https://user-images.githubusercontent.com/50979196/209185644-33b9b620-9078-434a-aa15-e34637b94745.png)
 
-![[Pasted image 20221207162121.png]]
 Recipe.txt
 
-![[Pasted image 20221207162303.png]]
+![Pasted image 20221207162303](https://user-images.githubusercontent.com/50979196/209185695-46ff6f46-9021-4828-bed1-fe2bd222393e.png)
 
-7 was the og file deleted? Yes
+Question 7 was the og file deleted? Yes
 
-![[Pasted image 20221207162344.png]]
+![Pasted image 20221207162344](https://user-images.githubusercontent.com/50979196/209186295-fdf9f584-4b5f-4880-bb4c-d6656df56f66.png)
+
 4104
 
-![[Pasted image 20221207162855.png]]
-
-![[Pasted image 20221207162913.png]]
-![[Pasted image 20221207163112.png]]
+![Pasted image 20221207162855](https://user-images.githubusercontent.com/50979196/209186614-2a1c3462-dbb3-49f3-8696-9d2a7d3604ed.png)
+![Pasted image 20221207162913](https://user-images.githubusercontent.com/50979196/209186683-e877317a-5090-4d2d-827d-9eecab3b2a23.png)
+![Pasted image 20221207163112](https://user-images.githubusercontent.com/50979196/209186726-aa83a311-8317-49dd-9753-79ff0bc2a3df.png)
 
 ``` 
 echo + mydiary.txt reveals some story
@@ -118,4 +123,5 @@ alert tcp any any -> any any (msg:"Investigate bad certificates, possible Dridex
 Final answer
 ```
 alert http any any -> any any (msg:"Suspicious JavaScript function, possible Dridex infection";  content:""; file_data;  sid:10000005;)
-```
+```![Pasted image 20221207161945](https://user-images.githubusercontent.com/50979196/209179468-c2e8bcab-fcb1-483f-9d24-035559a126c0.png)
+
