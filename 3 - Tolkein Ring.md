@@ -9,9 +9,9 @@ Windows Event Logs was a challenge where we are given powershell logs and asked 
 
 
 
--
+
 ![Pasted image 20221207150521](https://user-images.githubusercontent.com/50979196/209185371-72bedd76-f9de-4548-b89a-7f5d39160bcf.png)
-*
+
 ![Pasted image 20221207133659](https://user-images.githubusercontent.com/50979196/209188340-1f74fd76-8943-4dc7-8199-c1157f81cbb1.png)
 
 first answer is 12/24/2022
@@ -66,39 +66,50 @@ echo + mydiary.txt reveals some story
 
 
 Question #1 there are objects that can be exported, what are they? HTTP
-![[Pasted image 20221207223714.png]]
-![[Pasted image 20221207223807.png]]
-![[Pasted image 20221207223821.png]]
+![Pasted image 20221207223714](https://user-images.githubusercontent.com/50979196/209190588-acf2562b-db5e-4c30-a887-d369850f3862.png)
+
+![Pasted image 20221207223807](https://user-images.githubusercontent.com/50979196/209190651-4b08de98-5af9-4099-bc10-7a9b76c3aa1f.png)
+
+![Pasted image 20221207223821](https://user-images.githubusercontent.com/50979196/209190684-af6887a0-da76-4b4e-a90b-2a6e7e157603.png)
+
 687
-![[Pasted image 20221207223903.png]]
+
+![Pasted image 20221207223903](https://user-images.githubusercontent.com/50979196/209190782-77eef543-76e7-441c-a3e3-1fc92e838a46.png)
+
 A: 192.185.57.242
+
 
 5. What file is saved to the infected host?
 A = Ref_Sept24-2020.zip
+
 To get this, export the app.php file and run strings on it
-![[Pasted image 20221208073652.png]]
-![[Pasted image 20221208073716.png]]
+
+![Pasted image 20221208073652](https://user-images.githubusercontent.com/50979196/209190863-d6b78242-520f-4189-832e-88c18d56fd01.png)
+![Pasted image 20221208073716](https://user-images.githubusercontent.com/50979196/209190933-ce149d1e-f217-43c7-b7c5-5810bcf23577.png)
+
 Isreal + South sudan 
-![[Pasted image 20221208124356.png]]
+
+![Pasted image 20221208124356](https://user-images.githubusercontent.com/50979196/209190994-ee39a1fb-fc94-45fc-9b51-8604a72046e9.png)
 
 7) Is the host infected? Yes
-![[Pasted image 20221208124446.png]]  
 
-
-
+![Pasted image 20221208124446](https://user-images.githubusercontent.com/50979196/209191030-c9d4cbfe-949a-4e7e-a138-da84c98edf77.png)
 
 
 
 # Suricata Inncantations
 hint - offical source
 https://suricata.readthedocs.io/en/suricata-6.0.0/rules/intro.html
-![[Pasted image 20221208154129.png]]
+
+![Pasted image 20221208154129](https://user-images.githubusercontent.com/50979196/209191814-b458f85a-bdc4-4cc7-8b51-37b20bc8a5f2.png)
 ```
+
 alert dns any any -> any any (msg:"Known bad DNS lookup, possible Dridex infection"; dns_query; content:"adv.epostoday.uk"; nocase;)
 ```
 
 
-![[Pasted image 20221208154306.png]]
+![Pasted image 20221208154306](https://user-images.githubusercontent.com/50979196/209191860-f099307e-ae56-4b6f-bb08-9c0c4bd75e5b.png)
+
 Question 2: Develop a Suricata rule that alerts whenever the infected IP address 192.185.57.242 communicates with internal systems over HTTP.
 
 for this one i kept getting a same signature error, so i changed a previous rule, 3rd one down I think the signature error is i needed to have unique sid:xxxxx
@@ -106,7 +117,8 @@ for this one i kept getting a same signature error, so i changed a previous rule
 alert http any any -> any any (msg:"Investigate suspicious connections, possible Dridex infection"; sid:2200073; rev:2;)
 ```
 
-![[Pasted image 20221211162818.png]]
+![Pasted image 20221211162818](https://user-images.githubusercontent.com/50979196/209191935-8244a305-73aa-43fa-a5e1-2b59d1bd9373.png)
+
 
 ```
 We heard that some naughty actors are using TLS certificates with a specific CN.
@@ -121,7 +133,8 @@ alert tcp any any -> any any (msg:"Investigate bad certificates, possible Dridex
 ```
 
 Final answer
+
 ```
 alert http any any -> any any (msg:"Suspicious JavaScript function, possible Dridex infection";  content:""; file_data;  sid:10000005;)
-```![Pasted image 20221207161945](https://user-images.githubusercontent.com/50979196/209179468-c2e8bcab-fcb1-483f-9d24-035559a126c0.png)
+```
 
