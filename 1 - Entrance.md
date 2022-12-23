@@ -1,5 +1,6 @@
+![Pasted image 20221207164035](https://user-images.githubusercontent.com/50979196/209273909-0e851fba-ebd9-4589-886a-437e210de4d8.png)
 
-
+```
 KringleCoin Teller Machine
 
 Welcome to the KringleCoin Network! We're glad you're here!
@@ -22,4 +23,4 @@ We CANNOT tell you your secret key. If you lose it, you lose access to your Krin
 Here is your KringleCoin wallet information:  
 WalletAddress: x
 Key: x
-
+```
