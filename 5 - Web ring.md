@@ -94,22 +94,31 @@ Server: EC2ws
 Becasue there are alot of packets filtering is important. Because they were bruteforcing alot of the Lengths were the same. Most of these interesting packets were the ones with unique lengths.  
 
 all102s are brute force fails. From length 118-217 has intersting uniques
-![[Pasted image 20221207190252.png]]
+![Pasted image 20221207190252](https://user-images.githubusercontent.com/50979196/209564540-a89d5bb3-6532-474b-80ec-d2ea0d2cf622.png)
 
-![[Pasted image 20221207195321.png]]
+
+![Pasted image 20221207195321](https://user-images.githubusercontent.com/50979196/209564628-c6991550-7ed3-46b6-bf90-c27fbd7e14b8.png)
+
 
 answer 18.22.86.32
-![[Pasted image 20221207195727.png]]
+
+![Pasted image 20221207195727](https://user-images.githubusercontent.com/50979196/209564643-b07830d7-963b-40e6-9a67-4c226679ff3a.png)
+
 packet 7279 - alice
-![[Pasted image 20221207195754.png]]
-![[Pasted image 20221207200049.png]]
+
+![Pasted image 20221207195754](https://user-images.githubusercontent.com/50979196/209564664-42151046-9fd6-4f56-a6f2-d8c274a29a8f.png)
+
+![Pasted image 20221207200049](https://user-images.githubusercontent.com/50979196/209564683-d2f77e7f-c573-49cc-9d78-dac12cb06844.png)
+
 answer = /proc
 
-![[Pasted image 20221207200400.png]]
+![Pasted image 20221207200400](https://user-images.githubusercontent.com/50979196/209564699-bf297f17-7e4f-4bd5-9d82-df14d4ca7da3.png)
+
 ```
 http://169.254.169.254/latest/meta-data/identity-credentials/ec2/security-credentials/ec2-instance
 ```
-![[Pasted image 20221207200441.png]]
+![Pasted image 20221207200441](https://user-images.githubusercontent.com/50979196/209564710-af6139f7-8744-42c9-bcfb-98a0cad37b54.png)
+
 
 
 # Boria Mine Door
@@ -168,7 +177,8 @@ on chrome right click text box of pin 5, blur text remove
 
 ```
 #5 has a sanitize script
-![[Pasted image 20221212213801.png]]
+![Pasted image 20221212213801](https://user-images.githubusercontent.com/50979196/209565174-25279c94-faef-4d56-8023-ea3084f54a62.png)
+
 ```
 
         const sanitizeInput = () => {
@@ -218,18 +228,24 @@ Early parts of challenge can be solved using uppercase words. v
 Traffic flies, tamper, paths, app, types, ringlist, simple format,
 
 
-can only access on htb
 
-![[Pasted image 20221211113924.png]]
-![[Pasted image 20221211120426.png]]
+
+![[Pasted image 20221211113924.png]]![Pasted image 20221211113924](https://user-images.githubusercontent.com/50979196/209565228-6d15fa66-7de7-4143-957e-d65e9bb603c9.png)
+
+![[Pasted image 20221211120426.png]]![Pasted image 20221211120426](https://user-images.githubusercontent.com/50979196/209565236-7e9133fb-f39c-47a2-b863-822dcbb1dfc1.png)
+
 
 Got these buy dragging objects onto princess in any order 1-4 then fountain 1-4
 
-![[Pasted image 20221211120820.png]]
+![Pasted image 20221211120820](https://user-images.githubusercontent.com/50979196/209565276-e10f995c-5702-4297-a090-9fddf4e5a93c.png)
 
-![[Pasted image 20221211120936.png]]
-![[Pasted image 20221211121008.png]]
-![[Pasted image 20221211121105.png]]
+
+![Pasted image 20221211120936](https://user-images.githubusercontent.com/50979196/209565279-88aeda54-2a00-4ab4-a46b-37d4c9c88b9a.png)
+
+![Pasted image 20221211121008](https://user-images.githubusercontent.com/50979196/209565286-5ca699de-c046-4e99-a048-de6f4a55727e.png)
+
+![Pasted image 20221211121105](https://user-images.githubusercontent.com/50979196/209565294-7740a1c5-1398-4fc7-a6bd-cb865d214cd4.png)
+
 first step was finding the path
 /app/static/images/ringlist
 
