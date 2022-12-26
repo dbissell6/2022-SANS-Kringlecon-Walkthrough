@@ -230,9 +230,9 @@ Traffic flies, tamper, paths, app, types, ringlist, simple format,
 
 
 
-![[Pasted image 20221211113924.png]]![Pasted image 20221211113924](https://user-images.githubusercontent.com/50979196/209565228-6d15fa66-7de7-4143-957e-d65e9bb603c9.png)
+![Pasted image 20221211113924](https://user-images.githubusercontent.com/50979196/209565228-6d15fa66-7de7-4143-957e-d65e9bb603c9.png)
 
-![[Pasted image 20221211120426.png]]![Pasted image 20221211120426](https://user-images.githubusercontent.com/50979196/209565236-7e9133fb-f39c-47a2-b863-822dcbb1dfc1.png)
+![Pasted image 20221211120426](https://user-images.githubusercontent.com/50979196/209565236-7e9133fb-f39c-47a2-b863-822dcbb1dfc1.png)
 
 
 Got these buy dragging objects onto princess in any order 1-4 then fountain 1-4
@@ -260,8 +260,10 @@ xml code that executes
 </root>
 ```
 
-![[Pasted image 20221215101312.png]]
-![[Pasted image 20221218103915.png]]
+![Pasted image 20221215101312](https://user-images.githubusercontent.com/50979196/209565429-355efeda-4115-49de-aa8f-80cad7e3db61.png)
+
+![Pasted image 20221218103915](https://user-images.githubusercontent.com/50979196/209565435-38573f72-dab9-4918-8485-84b9b3159a57.png)
+
 x_phial_pholder_2022
 
 ```https://glamtarielsfountain.com/static/images/pholder-morethantopsupersecret63842.png```
@@ -283,7 +285,8 @@ https://glamtarielsfountain.com/static/images/x_phial_pholder_2022/redring-super
 </root>
 
 ```
-![[Pasted image 20221218112951.png]]
+![Pasted image 20221218112951](https://user-images.githubusercontent.com/50979196/209565632-74e77f19-8db4-43bc-b613-a37b2d1e611e.png)
+
 change the xxe to the reqtype
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -297,10 +300,13 @@ change the xxe to the reqtype
 </root>
 
 ```
-![[Pasted image 20221219071235.png]]
+![Pasted image 20221219071235](https://user-images.githubusercontent.com/50979196/209565667-49b08cb0-7239-46c5-bbf3-d01438566094.png)
+
 static/images/x_phial_pholder_2022/goldring-morethansupertopsecret76394734.png
-![[Pasted image 20221219071433.png]]
-![[Pasted image 20221219071736.png]]
+![Pasted image 20221219071433](https://user-images.githubusercontent.com/50979196/209565677-33054ff6-da54-41d9-a521-34e2504645cb.png)
+
+![Pasted image 20221219071736](https://user-images.githubusercontent.com/50979196/209565686-a3a7cec9-675b-414f-9d60-2a42e6e20f9f.png)
+
 
 
 given cookies never used
